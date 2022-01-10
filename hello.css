@@ -1,0 +1,13 @@
+_root {
+     apiVersion: v1;
+     kind: Pod;
+}
+metadata {
+     name: hello;
+}
+spec containers[0] {
+     name: hello;
+     image: "docker/whalesay";
+     command: [cowsay];
+     args: ["style your cloud"];
+}
